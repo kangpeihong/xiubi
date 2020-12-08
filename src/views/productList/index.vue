@@ -170,7 +170,9 @@ export default {
         },
       })
         .then((res) => {
+
           this.productList = res.data.content;
+          console.log('666',res)
           console.log("22444442", this.productList);
           this.productList.forEach((item, index) => {
             this.orderList[index] = {
